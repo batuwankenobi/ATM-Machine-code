@@ -14,3 +14,10 @@ let text = "1-View Balance " + newLine +
     "3-Deposit Money" + newLine +
     "4-Exit" + newLine +
     "Please select a value.";
+// alert(text);
+
+let selection = prompt(text);
+switch (selection) {
+    case "1":
+        alert("Your balance : " + balance);
+        break;
