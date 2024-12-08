@@ -32,3 +32,16 @@ switch (selection) {
                 "Your balance: " + balance + " " + "Amount to Withdraw: " + AmounttoWithdraw);
         }
         break;
+    case "3":
+        let AmounttoWithdraw = Number(prompt("Enter the amount to be deposited :"));
+        balance = balance + AmounttoWithdraw;
+        alert("Your current balance: " + balance);
+        break;
+
+    case "4":
+        alert("The system has been logged out...");
+        break;
+
+    default:
+        alert("Please enter a value between 1 and 4!");
+        break;
