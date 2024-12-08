@@ -21,3 +21,14 @@ switch (selection) {
     case "1":
         alert("Your balance : " + balance);
         break;
+    case "2":
+        let withdrawAmount = Number(prompt("Enter the amount you want to withdraw :"));
+        if (AmounttoWithdraw < balance) {
+            //successful
+            balance = balance - AmounttoWithdraw;
+            alert("Remaining balance: " + balance);
+        } else {
+            alert("You cannot withdraw more money than your balance!" + newLine +
+                "Your balance: " + balance + " " + "Amount to Withdraw: " + AmounttoWithdraw);
+        }
+        break;
